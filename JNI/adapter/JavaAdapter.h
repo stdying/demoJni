@@ -1,0 +1,1 @@
+#include <jni.h>class JavaAdapter {    private:        JavaAdapter() {};            protected:        JavaVM*   pJavaVM;        jobject   jObject;        JNIEnv * getJNIEnv();        void releaseJNIEnv();    public:        JavaAdapter(JNIEnv * jEnv, jobject jObj);        virtual ~JavaAdapter();};

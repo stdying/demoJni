@@ -1,0 +1,1 @@
+#include "JBoard.h"#include "CBoard.h"JNIEXPORT jint JNICALL Java_JBoard_getLength(JNIEnv *, jobject, jint cBrd) {    return (reinterpret_cast<CBoard*>(cBrd))->getLength();}JNIEXPORT void JNICALL Java_JBoard_setLength(JNIEnv *, jobject, jint cBrd, jint len) {    (reinterpret_cast<CBoard*>(cBrd))->setLength(len);}

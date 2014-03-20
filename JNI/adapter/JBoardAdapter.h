@@ -1,0 +1,1 @@
+#include "JavaAdapter.h"class JBoardAdapter : public JavaAdapter {    private:        jmethodID levelChangedID;    public:        JBoardAdapter(JNIEnv * pEnv, jobject jObj);        void levelChanged(int level);};
